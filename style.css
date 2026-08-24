@@ -230,13 +230,23 @@
     background:var(--stone-card);
     border:1px solid var(--rule);
     aspect-ratio:4/3;
-    display:flex;
-    align-items:center;
-    justify-content:center;
     position:relative;
     overflow:hidden;
   }
-  .map-plate svg{ width:100%; height:100%; }
+  .map-plate iframe{
+    width:100%;
+    height:100%;
+    border:0;
+    display:block;
+    filter:sepia(35%) saturate(85%) contrast(95%);
+  }
+  .map-plate::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    box-shadow:inset 0 0 0 1px rgba(169,121,58,0.35);
+    pointer-events:none;
+  }
   .resource-plate{
     background:var(--stone-card);
     border:1px solid var(--rule);
