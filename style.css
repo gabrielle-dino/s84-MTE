@@ -1,0 +1,279 @@
+:root{
+    --stone-bg:      #e7dfcb;
+    --stone-bg-dark: #ddd2b6;
+    --stone-card:    #f5f0e3;
+    --ink:           #2a2420;
+    --ink-soft:      #55493d;
+    --red:           #8a2e27;
+    --red-deep:      #6f221c;
+    --bronze:        #a9793a;
+    --bronze-light:  #c9a66b;
+    --verde:         #4c5c46;
+    --rule:          rgba(42,36,32,0.16);
+  }
+ 
+  *{ box-sizing:border-box; }
+ 
+  html{ scroll-behavior:smooth; }
+ 
+  body{
+    font-family:'Crimson Pro', serif;
+    color:var(--ink);
+    background-color:var(--stone-bg);
+    background-image:
+      radial-gradient(circle at 15% 20%, rgba(255,255,255,0.35), transparent 40%),
+      radial-gradient(circle at 85% 60%, rgba(0,0,0,0.05), transparent 45%),
+      radial-gradient(circle at 50% 90%, rgba(0,0,0,0.04), transparent 50%);
+    font-size:1.05rem;
+    line-height:1.7;
+  }
+ 
+  h1,h2,h3,h4,.font-display{
+    font-family:'Cinzel', serif;
+    letter-spacing:0.03em;
+    color:var(--ink);
+  }
+ 
+  .eyebrow{
+    font-family:'EB Garamond', serif;
+    font-weight:600;
+    letter-spacing:0.32em;
+    text-transform:uppercase;
+    font-size:0.78rem;
+    color:var(--red);
+  }
+ 
+  a{ color:var(--red); }
+  a:hover{ color:var(--red-deep); }
+ 
+  /* ---------- inscription divider ---------- */
+  .inscription-rule{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:0.85rem;
+    margin:0 auto;
+    color:var(--bronze);
+  }
+  .inscription-rule::before,
+  .inscription-rule::after{
+    content:"";
+    height:1px;
+    width:64px;
+    background:linear-gradient(90deg, transparent, var(--bronze-light));
+  }
+  .inscription-rule::after{ background:linear-gradient(90deg, var(--bronze-light), transparent); }
+ 
+  .section-divider{
+    height:1px;
+    background:linear-gradient(90deg, transparent, var(--rule) 20%, var(--rule) 80%, transparent);
+    margin:0;
+  }
+ 
+  /* ---------- navbar ---------- */
+  .navbar{
+    background:var(--ink);
+    padding-top:0.9rem;
+    padding-bottom:0.9rem;
+    border-bottom:3px solid var(--bronze);
+  }
+  .navbar .navbar-brand{
+    font-family:'Cinzel', serif;
+    font-weight:700;
+    letter-spacing:0.18em;
+    color:var(--stone-card);
+    font-size:1.35rem;
+  }
+  .navbar .navbar-brand span{ color:var(--bronze-light); }
+  .navbar .nav-link{
+    font-family:'EB Garamond', serif;
+    font-weight:600;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    font-size:0.86rem;
+    color:rgba(245,240,227,0.78) !important;
+    padding:0.5rem 1rem !important;
+    transition:color 0.2s ease;
+  }
+  .navbar .nav-link:hover,
+  .navbar .nav-link:focus{ color:var(--bronze-light) !important; }
+  .navbar .nav-link.active{ color:#fff !important; }
+  .navbar-toggler{ border-color:var(--bronze); }
+  .navbar-toggler:focus{ box-shadow:0 0 0 0.2rem rgba(169,121,58,0.5); }
+ 
+  /* ---------- hero / home ---------- */
+  .hero{
+    padding:6.5rem 0 5rem;
+    text-align:center;
+    position:relative;
+  }
+  .hero .capital-mark{
+    display:block;
+    font-size:2.6rem;
+    margin:0 auto 1.5rem;
+    color:var(--red);
+    opacity:0.9;
+  }
+  .hero h1{
+    font-size:clamp(2.6rem, 6vw, 4.6rem);
+    font-weight:900;
+    margin-bottom:0.5rem;
+  }
+  .hero .sub{
+    font-family:'EB Garamond', serif;
+    font-style:italic;
+    font-size:1.2rem;
+    color:var(--ink-soft);
+    max-width:640px;
+    margin:1.25rem auto 2.25rem;
+  }
+  .btn-roman{
+    font-family:'EB Garamond', serif;
+    font-weight:600;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    font-size:0.85rem;
+    background:var(--red);
+    border:1px solid var(--red);
+    color:#fff;
+    padding:0.85rem 2.3rem;
+    border-radius:1px;
+    transition:all 0.2s ease;
+  }
+  .btn-roman:hover{
+    background:var(--red-deep);
+    border-color:var(--red-deep);
+    color:#fff;
+  }
+  .btn-roman-outline{
+    font-family:'EB Garamond', serif;
+    font-weight:600;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    font-size:0.78rem;
+    background:transparent;
+    border:1px solid var(--bronze);
+    color:var(--ink);
+    padding:0.55rem 1.4rem;
+  }
+  .btn-roman-outline:hover{
+    background:var(--ink);
+    border-color:var(--ink);
+    color:var(--stone-card);
+  }
+ 
+  /* ---------- generic sections ---------- */
+  section{ padding:5rem 0; }
+  .section-title{
+    font-size:clamp(1.7rem, 3vw, 2.3rem);
+    margin-bottom:0.35rem;
+  }
+  .section-lede{
+    color:var(--ink-soft);
+    max-width:640px;
+  }
+ 
+  .bg-stone{ background:var(--stone-bg-dark); }
+ 
+  /* ---------- triad (signature element) ---------- */
+  .triad-card{
+    background:var(--stone-card);
+    border:1px solid var(--rule);
+    padding:2rem 1.5rem;
+    height:100%;
+    text-align:center;
+    position:relative;
+  }
+  .triad-card::before{
+    content:"";
+    position:absolute;
+    top:10px; left:10px; right:10px; bottom:10px;
+    border:1px solid rgba(169,121,58,0.35);
+    pointer-events:none;
+  }
+  .triad-word{
+    font-family:'Cinzel', serif;
+    font-weight:700;
+    letter-spacing:0.1em;
+    color:var(--red);
+    font-size:1.05rem;
+    margin:0.9rem 0 0.6rem;
+  }
+  .triad-icon{ display:block; font-size:1.9rem; margin:0 auto; color:var(--bronze); }
+ 
+  /* ---------- featured / category cards ---------- */
+  .order-card{
+    background:var(--stone-card);
+    border:1px solid var(--rule);
+    height:100%;
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .order-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 14px 28px rgba(42,36,32,0.14);
+  }
+  .order-figure{
+    height:150px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(180deg, var(--stone-bg-dark), var(--stone-card));
+    border-bottom:1px solid var(--rule);
+  }
+  .order-figure i{ font-size:2.75rem; }
+  .order-card .card-body{ padding:1.5rem; }
+  .order-card h5{ font-size:1.05rem; margin-bottom:0.4rem; }
+  .order-card p{ font-size:0.94rem; color:var(--ink-soft); }
+ 
+  /* ---------- resources / map ---------- */
+  .map-plate{
+    background:var(--stone-card);
+    border:1px solid var(--rule);
+    aspect-ratio:4/3;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    overflow:hidden;
+  }
+  .map-plate svg{ width:100%; height:100%; }
+  .resource-plate{
+    background:var(--stone-card);
+    border:1px solid var(--rule);
+    padding:1.75rem;
+    height:100%;
+  }
+ 
+  /* ---------- about ---------- */
+  .about-panel{
+    background:var(--ink);
+    color:var(--stone-card);
+  }
+  .about-panel .section-lede{ color:rgba(245,240,227,0.75); }
+  .about-panel .eyebrow{ color:var(--bronze-light); }
+  .contact-line{
+    display:flex;
+    align-items:center;
+    gap:0.75rem;
+    font-family:'EB Garamond', serif;
+    font-size:1.02rem;
+    margin-bottom:0.6rem;
+  }
+  .contact-line i{ width:18px; flex:none; font-size:1.05rem; color:var(--bronze-light); }
+  .about-panel a{ color:var(--stone-card); text-decoration:underline; text-decoration-color:var(--bronze); }
+ 
+  /* ---------- footer ---------- */
+  footer{
+    background:#1c1713;
+    color:rgba(245,240,227,0.55);
+    padding:2.25rem 0;
+    text-align:center;
+    font-family:'EB Garamond', serif;
+    font-size:0.85rem;
+    letter-spacing:0.04em;
+  }
+ 
+  @media (max-width:767.98px){
+    section{ padding:3.5rem 0; }
+    .hero{ padding:4.5rem 0 3rem; }
+  }

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VITRUVIA — An Architecture Resource Hub</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;1,400&family=EB+Garamond:wght@500;600&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+<link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="#home">VITRUVI<span>A</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#introduction">Intro</a></li>
+        <li class="nav-item"><a class="nav-link" href="#featured">Featured</a></li>
+        <li class="nav-item"><a class="nav-link" href="#categories-section">Categories</a></li>
+        <li class="nav-item"><a class="nav-link" href="#resources">Sample Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+<!-- ===================== HOME ===================== -->
+<section id="home" class="hero">
+  <div class="container">
+    <i class="fa-solid fa-landmark capital-mark"></i>
+    <div class="eyebrow mb-3">An Architecture Resource Hub</div>
+    <h1>VITRUVIA</h1>
+    <div class="inscription-rule my-3"><span>&#10022;</span></div>
+    <p class="sub">Built on the three pillars Vitruvius first inscribed in <em>De Architectura</em> — firmitas, utilitas, venustas — a running record of the styles, orders, and thinkers that shaped how we build.</p>
+    <a href="#introduction" class="btn btn-roman">Get Started</a>
+  </div>
+</section>
+ 
+<div class="section-divider"></div>
+ 
+<!-- ===================== INTRODUCTION ===================== -->
+<section id="introduction">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="eyebrow mb-2">Introduction</div>
+        <h2 class="section-title">Structure Becomes Culture</h2>
+        <p class="section-lede mt-3">
+          Around 15 BCE, the Roman engineer Vitruvius set down the first surviving treatise on building — ten books
+          arguing that a structure earns its place only when it stands firm, serves its purpose, and pleases the eye.
+          Two thousand years later, that triad still holds. Vitruvia gathers primers, drawings, and case studies
+          across the styles that followed: Roman engineering, Gothic verticality, Renaissance proportion, and the
+          movements built in their shadow.
+        </p>
+        <p class="section-lede">
+          Whether you're studying for a design history exam or just tracing where a column order came from, this hub
+          is organized the way the discipline itself is: around the same three questions Vitruvius asked first.
+        </p>
+      </div>
+      <div class="col-lg-6">
+        <div class="row g-3">
+          <div class="col-4">
+            <div class="triad-card">
+              <i class="fa-solid fa-shield-halved triad-icon"></i>
+              <div class="triad-word">Firmitas</div>
+              <p class="small mb-0" style="color:var(--ink-soft)">Strength — resources vetted for accuracy</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="triad-card">
+              <i class="fa-solid fa-gears triad-icon"></i>
+              <div class="triad-word">Utilitas</div>
+              <p class="small mb-0" style="color:var(--ink-soft)">Function — organized so you find it fast</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="triad-card">
+              <i class="fa-solid fa-star triad-icon"></i>
+              <div class="triad-word">Venustas</div>
+              <p class="small mb-0" style="color:var(--ink-soft)">Beauty — a page worth lingering on</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<div class="section-divider"></div>
+ 
+<!-- ===================== FEATURED ===================== -->
+<section id="featured" class="bg-stone">
+  <div class="container">
+    <div class="eyebrow mb-2">Featured</div>
+    <h2 class="section-title mb-2">Browse by Style</h2>
+    <p class="section-lede mb-5">Four eras that reshaped what buildings could do — start wherever your syllabus does.</p>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3">
+        <div class="order-card card">
+          <div class="order-figure">
+            <i class="fa-solid fa-landmark" style="color:#8a2e27"></i>
+          </div>
+          <div class="card-body">
+            <h5>Roman &amp; Classical</h5>
+            <p>Arches, vaults, and the Doric, Ionic, and Corinthian orders that still frame civic buildings today.</p>
+            <a href="#categories-section" class="btn btn-roman-outline btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="order-card card">
+          <div class="order-figure">
+            <i class="fa-solid fa-church" style="color:#4c5c46"></i>
+          </div>
+          <div class="card-body">
+            <h5>Gothic</h5>
+            <p>Pointed arches and flying buttresses that let medieval cathedrals climb higher and open their walls to glass.</p>
+            <a href="#categories-section" class="btn btn-roman-outline btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="order-card card">
+          <div class="order-figure">
+            <i class="fa-solid fa-landmark-dome" style="color:#a9793a"></i>
+          </div>
+          <div class="card-body">
+            <h5>Renaissance</h5>
+            <p>A return to classical proportion, rebuilt on mathematical symmetry — from Brunelleschi's dome onward.</p>
+            <a href="#categories-section" class="btn btn-roman-outline btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="order-card card">
+          <div class="order-figure">
+            <i class="fa-solid fa-city" style="color:#2a2420"></i>
+          </div>
+          <div class="card-body">
+            <h5>Modernist</h5>
+            <p>"Form follows function": steel frames, open plans, and the break from ornament altogether.</p>
+            <a href="#categories-section" class="btn btn-roman-outline btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<div class="section-divider"></div>
+ 
+<!-- ===================== CATEGORIES ===================== -->
+<section id="categories-section">
+  <div class="container">
+    <div class="eyebrow mb-2">Categories</div>
+    <h2 class="section-title mb-2">Browse the Full Archive</h2>
+    <p class="section-lede mb-5">Every style in the hub, organized for a closer look.</p>
+    <div class="row g-4" id="categories">
+      <div class="col-sm-6 col-lg-4">
+        <div class="order-card card">
+          <div class="order-figure"><i class="fa-solid fa-landmark" style="color:#8a2e27"></i></div>
+          <div class="card-body">
+            <h5>Roman</h5>
+            <p>Concrete, the arch, and infrastructure built to outlast an empire.</p>
+            <a href="#resources" class="btn btn-roman-outline btn-sm">View Resource</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="order-card card">
+          <div class="order-figure"><i class="fa-solid fa-church" style="color:#4c5c46"></i></div>
+          <div class="card-body">
+            <h5>Gothic</h5>
+            <p>Ribbed vaults and rose windows built to draw the eye upward.</p>
+            <a href="#resources" class="btn btn-roman-outline btn-sm">View Resource</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="order-card card">
+          <div class="order-figure"><i class="fa-solid fa-landmark-dome" style="color:#a9793a"></i></div>
+          <div class="card-body">
+            <h5>Renaissance</h5>
+            <p>Symmetry, perspective, and the rebirth of classical ideals.</p>
+            <a href="#resources" class="btn btn-roman-outline btn-sm">View Resource</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="order-card card">
+          <div class="order-figure"><i class="fa-solid fa-scroll" style="color:#6b3fa0"></i></div>
+          <div class="card-body">
+            <h5>Baroque</h5>
+            <p>Drama, curvature, and ornament used to move the viewer emotionally.</p>
+            <a href="#resources" class="btn btn-roman-outline btn-sm">View Resource</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="order-card card">
+          <div class="order-figure"><i class="fa-solid fa-city" style="color:#2a2420"></i></div>
+          <div class="card-body">
+            <h5>Modernist</h5>
+            <p>Glass, steel, and the belief that ornament was optional.</p>
+            <a href="#resources" class="btn btn-roman-outline btn-sm">View Resource</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="order-card card">
+          <div class="order-figure"><i class="fa-solid fa-cubes" style="color:#5a5044"></i></div>
+          <div class="card-body">
+            <h5>Brutalist</h5>
+            <p>Raw concrete and blunt geometry, honest about how it was made.</p>
+            <a href="#resources" class="btn btn-roman-outline btn-sm">View Resource</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<div class="section-divider"></div>
+ 
+<!-- ===================== SAMPLE RESOURCES + ABOUT ===================== -->
+<section class="bg-stone">
+  <div class="container">
+    <div class="row g-4 mb-5">
+      <div class="col-lg-6" id="resources">
+        <div class="eyebrow mb-2">Sample Resources</div>
+        <h2 class="section-title mb-4">Field Study: The Pantheon</h2>
+        <div class="row g-3">
+          <div class="col-5">
+            <div class="map-plate">
+              <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                <rect width="200" height="150" fill="#e0d6bd"/>
+                <path d="M0 40 H200 M0 90 H200 M40 0 V150 M140 0 V150" stroke="#c9bd9d" stroke-width="2"/>
+                <path d="M0 110 Q60 95 100 105 T200 100" stroke="#a9793a" stroke-width="3" fill="none"/>
+                <circle cx="100" cy="60" r="9" fill="#8a2e27"/>
+                <path d="M100 60 L100 40" stroke="#8a2e27" stroke-width="2"/>
+              </svg>
+            </div>
+          </div>
+          <div class="col-7">
+            <div class="resource-plate">
+              <h5 class="mb-2">Rotunda &amp; Oculus</h5>
+              <p class="small mb-3" style="color:var(--ink-soft)">A close reading of the Pantheon's unreinforced concrete dome and the single oculus that lights it — still the largest of its kind, nearly 1,900 years on.</p>
+              <a href="#about" class="btn btn-roman-outline btn-sm">Open Study</a>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="col-lg-6">
+        <div class="eyebrow mb-2">About</div>
+        <h2 class="section-title mb-3" id="about-heading">Why Vitruvia Exists</h2>
+        <p class="section-lede">
+          Architecture is usually taught in fragments — a period here, a landmark there. Vitruvia keeps the throughline:
+          every style on this hub is measured against the same three questions a Roman engineer asked in 15 BCE.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ===================== ABOUT ===================== -->
+<section id="about" class="about-panel">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6" id="mission">
+        <div class="eyebrow mb-2">Mission Statement</div>
+        <h2 class="section-title mb-3" style="color:var(--stone-card)">Built to Last, Like the Structures It Studies</h2>
+        <p class="section-lede">
+          Vitruvia exists to make architectural history legible to students, self-taught enthusiasts, and anyone
+          standing in front of a building wondering why it looks the way it does. We vet every source for accuracy
+          (firmitas), organize the archive so nothing is more than two clicks away (utilitas), and hold every page
+          to the same design standard we ask of the buildings we cover (venustas).
+        </p>
+      </div>
+      <div class="col-lg-6" id="contact">
+        <div class="eyebrow mb-2">Contact</div>
+        <h2 class="section-title mb-3" style="color:var(--stone-card)">Get in Touch</h2>
+        <div class="contact-line">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:hello@vitruvia.example">hello@vitruvia.example</a>
+        </div>
+        <div class="contact-line">
+          <i class="fa-solid fa-phone"></i>
+          <span>+63 900 000 0000</span>
+        </div>
+        <div class="contact-line align-items-start">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Manila, Philippines</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<footer>
+  <div class="inscription-rule mb-3"><span style="letter-spacing:0.3em; font-family:'EB Garamond',serif; font-size:0.8rem;">FIRMITAS &middot; UTILITAS &middot; VENUSTAS</span></div>
+  &copy; 2026 Vitruvia. An educational resource hub.
+</footer>
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Close the mobile nav after a link is tapped, and highlight the active section.
+  document.querySelectorAll('#navMenu .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const menu = document.getElementById('navMenu');
+      if (menu.classList.contains('show')) {
+        bootstrap.Collapse.getOrCreateInstance(menu).hide();
+      }
+    });
+  });
+ 
+  const sections = ['home','introduction','featured','categories-section','resources','about']
+    .map(id => document.getElementById(id)).filter(Boolean);
+  const navLinks = Array.from(document.querySelectorAll('#navMenu .nav-link'));
+ 
+  const setActive = () => {
+    let current = sections[0];
+    sections.forEach(sec => {
+      if (window.scrollY + 120 >= sec.offsetTop) current = sec;
+    });
+    navLinks.forEach(link => {
+      link.classList.toggle('active', link.getAttribute('href') === '#' + current.id);
+    });
+  };
+  window.addEventListener('scroll', setActive);
+  setActive();
+</script>
+</body>
+</html>
+ 
